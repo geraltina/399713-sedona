@@ -24,7 +24,7 @@
 								<a href="map.html">Карта штата</a>
 							</li>
 							<li>
-								<a href="hotels.html">Гостиницы</a>
+								<a>Гостиницы</a>
 							</li>
 						</ul>
 					</div>
@@ -38,23 +38,27 @@
 			<section class="filter">
 				<form action="https://echo.htmlacademy.ru" method="get">
 					<div class="infrastructure">
-						<h3>Инфраструктура:</h3>
-						<input type="checkbox" name="pool" id="pool"> <label for="pool">Бассейн</label>
-						<input type="checkbox" name="parking" id="parking"> <label for="parking">Парковка</label>
-						<input type="checkbox" name="wi-fi" id="wi-fi"> <label for="wi-fi">Wi-Fi</label>
+						<fieldset>
+							<legend>Инфраструктура:</legend>
+							<input type="checkbox" name="pool" id="pool" checked><label for="pool">Бассейн</label>
+							<input type="checkbox" name="parking" id="parking"><label for="parking">Парковка</label>
+							<input type="checkbox" name="wi-fi" id="wi-fi"><label for="wi-fi">Wi-Fi</label>
+						</fieldset>
 					</div>
 					<div class="type-of-house">
-						<h3>Тип жилья:</h3>
-						<input type="checkbox" name="hotel" id="hotel"> <label for="hotel">Гостиница</label>
-						<input type="checkbox" name="motel" id="motel"> <label for="motel">Мотель</label>
-						<input type="checkbox" name="apartments" id="apartments"> <label for="apartments">Апартаменты</label>
+						<fieldset>
+							<legend>Тип жилья:</legend>
+							<input type="checkbox" name="hotel" id="hotel" checked><label for="hotel">Гостиница</label>
+							<input type="checkbox" name="motel" id="motel" checked><label for="motel">Мотель</label>
+							<input type="checkbox" name="apartments" id="apartments" checked><label for="apartments">Апартаменты</label>
+						</fieldset>
 					</div>
 					<div class="price">
-						<label for="pricecount">Стоимость в сутки (Р):</label>
-						<div class="price-range">
-						От 0 до 3000	
-						</div>
-						<input type="range" min="0" max="3000" step="1" value="1500" name="pricecount">
+						<fieldset>
+							<legend>Стоимость в сутки (Р):</legend>
+								От 0 до 3000	
+							<input type="range" min="0" max="3000" step="1" value="1500" name="pricecount">
+						</fieldset>
 					</div>
 					<button type="submit">Показать</button>
 				</form>
@@ -64,15 +68,24 @@
 					<span>Найдено: 3</span>
 					<span>Сортировка:</span>
 					<ul>
-						<li>По цене</li>
-						<li>По типу</li>
-						<li>По рейтингу</li>
+						<li><a href="#">По цене</a></li>
+						<li><a href="#">По типу</a></li>
+						<li><a href="#">По рейтингу</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Вверх</a></li>
+						<li><a href="#">Вниз</a></li>
 					</ul>
 				</section>
 				<article class="hotels-item">
 					<img src="#" width="" height="" alt="Amara Resort and Spa">
 					<h2>Amara Resort &#38; Spa</h2>
-					<div class="stars"></div>
+					<div class="stars">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
 					<span class="type">Гостиница</span>
 					<span class="hotels-item-price">От 2500 р.</span>
 					<a href="#" class="details">Подробнее</a>
@@ -82,7 +95,10 @@
 				<article class="hotels-item">
 					<img src="#" width="" height="" alt="Resort Quail Inn">
 					<h2>Resort Quail Inn</h2>
-					<div class="stars"></div>
+					<div class="stars">
+						<span></span>
+						<span></span>
+					</div>
 					<span class="type">Мотель</span>
 					<span class="hotels-item-price">От 3000 р.</span>
 					<a href="#" class="details">Подробнее</a>
@@ -92,11 +108,15 @@
 				<article class="hotels-item">
 					<img src="#" width="" height="" alt="Villas at Poco Diablo">
 					<h2>Villas at Poco Diablo</h2>
-					<div class="stars"></div>
+					<div class="stars">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
 					<span class="type">Апартаменты</span>
 					<span class="hotels-item-price">От 4000 р.</span>
 					<a href="#" class="details">Подробнее</a>
-					<button type="submit">Забронировать</button>
+					<a href="#">Забронировать</a>
 					<span>Рейтинг: 9,2</span>
 				</article>
 			</section>
