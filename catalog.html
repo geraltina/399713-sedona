@@ -56,8 +56,15 @@
 					<div class="price">
 						<fieldset>
 							<legend>Стоимость в сутки (Р):</legend>
-								От 0 до 3000	
-							<input type="range" min="0" max="3000" step="1" value="1500" name="pricecount">
+							<label for="min-price">От</label><input type="text" name="min-price" id="min-price" value="0"> 
+							<label for="max-price">до</label><input type="text" name="max-price" id="max-price" value="3000">	
+							<div class="range-controls">
+								<div class="bar">
+									<div class="scale">
+								</div>
+								<div class="controller controller-left"></div>
+								<div class="controller controller-right"></div>
+							</div>
 						</fieldset>
 					</div>
 					<button type="submit">Показать</button>
