@@ -1,0 +1,27 @@
+body {
+	width: 1200px;
+	font-family: PT Sans, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #333333;
+	line-height: 21px;
+	text-transform: uppercase;
+}
+
+.header-one {
+	font-size: 21px;
+	font-weight: bold;
+	color: black;
+	line-height: 26px;
+}
+
+.header-two {
+	font-size: 21px;
+	font-weight: bold;
+	color: black;
+	line-height: 21px;
+}
+
+.white-header {
+	color: white;
+}
