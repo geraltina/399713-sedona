@@ -1,6 +1,6 @@
 body {
 	width: 1200px;
-	font-family: PT Sans, Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
 	font-weight: normal;
 	color: #333333;
@@ -22,6 +22,24 @@ body {
 	line-height: 21px;
 }
 
+.header-two-catalog {
+	font-size: 21px;
+	font-weight: bold;
+	color: black;
+	line-height: 26px;
+}
+
 .white-header {
 	color: white;
+}
+
+.picture {
+	width: 100%;
+	height: 773px;
+	background-image: url(../img/picture.jpg);
+}
+
+.welcome-picture {
+	margin-top: 76px;
+	margin-left: 371px;
 }
