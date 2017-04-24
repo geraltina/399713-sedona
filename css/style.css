@@ -16,25 +16,14 @@ body {
 .main-menu {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between
+	justify-content: space-between;
 }
 
-.main-menu .inline-left {
-	flex-basis: 478px;
-}
-
-.main-menu .inline-right {
-	flex-basis: 478px;
-}
-
-.inline-left div {
-	display: flex;
-	justify-content: space-around;
-}
-
-.inline-right div {
-	display: flex;
-	justify-content: space-around;
+.main-menu .main-menu-item {
+	display: inline-block;
+	margin-right: 0;
+	text-align: center;
+	min-width: 239px;
 }
 
 .main-menu a {
