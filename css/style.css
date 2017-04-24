@@ -20,6 +20,7 @@ body {
 	justify-content: space-between;
 	min-height: 40px;
 	padding-top: 16px;
+	font-size: 0;
 }
 
 .main-menu .main-menu-item {
@@ -31,6 +32,7 @@ body {
 
 .main-menu a {
 	line-height: 26px;
+	font-size: 14px;
 	font-weight: bold;
 	color: black;
 	text-decoration: none;
