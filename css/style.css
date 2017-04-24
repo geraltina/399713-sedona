@@ -16,15 +16,12 @@ body {
 /*Хедер*/
 .main-header {
 	position: relative;
-	width: 1200px;
-	margin: 0 auto;
 }
+
 .main-menu {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	min-height: 40px;
-	padding-top: 15px;
+	padding-top: 14px;
+	padding-bottom: 15px;
 	font-size: 0;
 }
 
@@ -33,6 +30,10 @@ body {
 	margin-right: 0;
 	text-align: center;
 	min-width: 239px;
+}
+
+.inline-left .main-menu-item:nth-of-type(2) {
+	margin-right: 244px;
 }
 
 .main-menu a {
