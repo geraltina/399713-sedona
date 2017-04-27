@@ -29,108 +29,126 @@
 			<section class="filter">
 				<form action="https://echo.htmlacademy.ru" method="get">
 					<div class="infrastructure">
-						<fieldset>
-							<legend>Инфраструктура:</legend>
-							<input type="checkbox" name="pool" id="pool" checked><label for="pool">Бассейн</label>
-							<input type="checkbox" name="parking" id="parking"><label for="parking">Парковка</label>
-							<input type="checkbox" name="wi-fi" id="wi-fi"><label for="wi-fi">Wi-Fi</label>
-						</fieldset>
+						<b>Инфраструктура:</b>
+						<div><input type="checkbox" name="pool" id="pool" checked><label for="pool">Бассейн</label></div>
+						<div><input type="checkbox" name="parking" id="parking"><label for="parking">Парковка</label></div>
+						<div><input type="checkbox" name="wi-fi" id="wi-fi"><label for="wi-fi">Wi-Fi</label></div>			
 					</div>
 					<div class="type-of-house">
-						<fieldset>
-							<legend>Тип жилья:</legend>
-							<input type="checkbox" name="hotel" id="hotel" checked><label for="hotel">Гостиница</label>
-							<input type="checkbox" name="motel" id="motel" checked><label for="motel">Мотель</label>
-							<input type="checkbox" name="apartments" id="apartments" checked><label for="apartments">Апартаменты</label>
-						</fieldset>
+						<b>Тип жилья:</b>
+						<div><input type="checkbox" name="hotel" id="hotel" checked><label for="hotel">Гостиница</label></div>
+						<div><input type="checkbox" name="motel" id="motel" checked><label for="motel">Мотель</label></div>
+						<div><input type="checkbox" name="apartments" id="apartments" checked><label for="apartments">Апартаменты</label></div>
 					</div>
 					<div class="price">
-						<fieldset>
-							<legend>Стоимость в сутки (Р):</legend>
-							<label for="min-price">От</label><input type="text" name="min-price" id="min-price" value="0"> 
-							<label for="max-price">до</label><input type="text" name="max-price" id="max-price" value="3000">	
-							<div class="range-controls">
-								<div class="bar">
-									<div class="scale"></div>
-								</div>
-								<div class="controller controller-left"></div>
-								<div class="controller controller-right"></div>
+						<b>Стоимость в сутки (Р):</b>
+						<div class="price-value">
+							<label for="min-price">От</label><input type="text" name="min-price" id="min-price" value="0" class="min">
+							<label for="max-price">до</label><input type="text" name="max-price" id="max-price" value="3000" class="max">
+						</div>	
+						<div class="range-controls">
+							<div class="bar">
+								<div class="scale"></div>
 							</div>
-						</fieldset>
+							<div class="controller controller-left"></div>
+							<div class="controller controller-right"></div>
+						</div>
 					</div>
-					<button type="submit">Показать</button>
+					<button type="submit" class="show">Показать</button>
 				</form>
 			</section>
 			<section class="hotels">
 				<section class="sorting">
-					<span>Найдено: 3</span>
-					<span>Сортировка:</span>
-					<ul>
-						<li><a href="#">По цене</a></li>
-						<li><a href="#">По типу</a></li>
-						<li><a href="#">По рейтингу</a></li>
-					</ul>
-					<ul>
-						<li><a href="#">Вверх</a></li>
-						<li><a href="#">Вниз</a></li>
-					</ul>
+					<span class="found">Найдено: 3</span>
+					<span class="sorting-header">Сортировка:</span>
+					<div class="type-of-sorting">
+						<div class="sorting-item"><a href="#" class=" active">По цене</a></div>
+						<div class="sorting-item"><a href="#" class=" inactive">По типу</a></div>
+						<div class="sorting-item"><a href="#" class=" inactive">По рейтингу</a></div>
+					</div>
+					<div class="up-and-down">
+						<a href="#"><div class="up"></div></a>
+						<a href="#"><div class="down"></div></a>
+					</div>
 				</section>
 				<article class="hotels-item">
 					<img src="img/hotel-1.jpg" width="135" height="90" alt="Amara Resort and Spa">
-					<h2 class="header-two-catalog">Amara Resort &#38; Spa</h2>
-					<div class="stars">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
+					<div class="hotels-description">
+						<h2 class="header-two-catalog">Amara Resort &#38; Spa</h2>
+						<div class="type-and-price">
+							<span class="type">Гостиница</span>
+							<span class="hotels-item-price">От 2500 р.</span>
+						</div>
+						<div class="buttons">
+							<div class="details"><a href="#">Подробнее</a></div>
+							<div class="booking"><a href="#">Забронировать</a></div>
+						</div>
 					</div>
-					<span class="type">Гостиница</span>
-					<span class="hotels-item-price">От 2500 р.</span>
-					<a href="#" class="details">Подробнее</a>
-					<a href="#">Забронировать</a>
-					<span>Рейтинг: 8,5</span>
+					<div class="rating-and-stars">
+						<div class="stars">
+							<span class="star-item"></span>
+							<span class="star-item"></span>
+							<span class="star-item"></span>
+							<span class="star-item"></span>
+						</div>
+						<span class="rating">Рейтинг: 8,5</span>
+					</div>
 				</article>
 				<article class="hotels-item">
 					<img src="img/hotel-2.jpg" width="135" height="90" alt="Resort Quail Inn">
-					<h2 class="header-two-catalog">Resort Quail Inn</h2>
-					<div class="stars">
-						<span></span>
-						<span></span>
+					<div class="hotels-description">
+						<h2 class="header-two-catalog">Resort Quail Inn</h2>
+						<div class="type-and-price">
+							<span class="type">Мотель</span>
+							<span class="hotels-item-price">От 3000 р.</span>
+						</div>
+						<div class="buttons">
+							<div class="details"><a href="#">Подробнее</a></div>
+							<div class="booking"><a href="#">Забронировать</a></div>
+						</div>
 					</div>
-					<span class="type">Мотель</span>
-					<span class="hotels-item-price">От 3000 р.</span>
-					<a href="#" class="details">Подробнее</a>
-					<a href="#">Забронировать</a>
-					<span>Рейтинг: 8,9</span>
+					<div class="rating-and-stars">
+						<div class="stars">
+							<span class="star-item"></span>
+							<span class="star-item"></span>
+							<span class="star-item"></span>
+						</div>
+						<span class="rating">Рейтинг: 8,9</span>
+					</div>
 				</article>
 				<article class="hotels-item">
 					<img src="img/hotel-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
-					<h2 class="header-two-catalog">Villas at Poco Diablo</h2>
-					<div class="stars">
-						<span></span>
-						<span></span>
-						<span></span>
+					<div class="hotels-description">
+						<h2 class="header-two-catalog">Villas at Poco Diablo</h2>
+						<div class="type-and-price">
+							<span class="type">Апартаменты</span>
+							<span class="hotels-item-price">От 4000 р.</span>
+						</div>
+						<div class="buttons">
+							<div class="details"><a href="#">Подробнее</a></div>
+							<div class="booking"><a href="#">Забронировать</a></div>
+						</div>
 					</div>
-					<span class="type">Апартаменты</span>
-					<span class="hotels-item-price">От 4000 р.</span>
-					<a href="#" class="details">Подробнее</a>
-					<a href="#">Забронировать</a>
-					<span>Рейтинг: 9,2</span>
+					<div class="rating-and-stars">
+						<div class="stars">
+							<span class="star-item"></span>
+							<span class="star-item"></span>
+						</div>
+						<span class="rating">Рейтинг: 9,2</span>
+					</div>
 				</article>
 			</section>
 		</main>
 		<footer class="main-footer container">
-			<div class="footer-hashtag">
+			<div class="footer-item footer-hashtag">
 				<span>#VISITSEDONA</span>
 			</div>
-			<div class="footer-social">
-				<ul>
-					<li><a class="social-btn social-btn-tw" href="#">Твиттер</a></li>
-					<li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
-					<li><a class="social-btn social-btn-yt" href="#">Youtube</a></li>
-				</ul>
+			<div class="footer-item footer-social">
+				<a href="#"><div class="social-btn social-btn-tw"></div></a>
+				<a href="#"><div class="social-btn social-btn-fb"></div></a>
+				<a href="#"><div class="social-btn social-btn-yt"></div></a>
 			</div>
-			<div class="footer-copyright">
+			<div class="footer-item footer-copyright">
 				<span>Website by</span>
 				<a href="https://htmlacademy.ru/intensive/htmlcss" class="btn"><img src="img/copyright.png" width="113" height="39"></a>
 			</div>
