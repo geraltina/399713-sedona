@@ -1,17 +1,15 @@
-/* Put your CSS code in the left column, instead of example, to put or remove unnecessary prefixes. */
-
 @font-face {
 	font-family: "PT Sans";
-	src: url(../fonts/ptsans.woff2),
-		url(../fonts/ptsans.woff);
+	src: url(../fonts/ptsans.woff),
+		url(../fonts/ptsans.woff2);
 	font-weight: normal;
 	font-style: normal; 
 } 
 
 @font-face { 
 	font-family: "PT Sans";
-	src: url(../fonts/ptsansbold.woff2),
-		url(../fonts/ptsansbold.woff);
+	src: url(../fonts/ptsansbold.woff),
+		url(../fonts/ptsansbold.woff2);
 	font-weight: bold;
 	font-style: normal; 
 } 
@@ -390,12 +388,13 @@ body {
 
 .calendar {
 	position: absolute;
+	top: 10px;
 	right: 10px;
 	width: 22px;
 	height: 22px;
 	background-image: url(../img/spritesheet.png);
 	background-repeat: no-repeat;
-	background-position: -325px -30px;
+	background-position: -327px -30px;
 	cursor: pointer;
 }
 
@@ -540,8 +539,19 @@ body {
 	padding-top: 5px;
 }
 
-.infrastructure .active-label::before,
-.type-of-house label::before {
+input[type="checkbox"] + label::before {
+	content: "";
+	display: inline-block;
+	padding-right: 14px;
+	width: 26px;
+	min-height: 22px;
+	background-image: url(../img/spritesheet.png);
+	background-repeat: no-repeat;
+	background-position: -1200px -31px;
+	cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label::before {
 	content: "";
 	display: inline-block;
 	padding-right: 14px;
@@ -553,7 +563,8 @@ body {
 	cursor: pointer;
 }
 
-.inactive-label::before {
+
+input[type="checkbox"]:disabled + label::before {
 	content: "";
 	display: inline-block;
 	padding-right: 14px;
@@ -561,7 +572,7 @@ body {
 	min-height: 22px;
 	background-image: url(../img/spritesheet.png);
 	background-repeat: no-repeat;
-	background-position: -1200px -31px;
+	background-position: -1571px -31px;
 	cursor: pointer;
 }
 
@@ -714,6 +725,10 @@ body {
 	display: flex;
 	margin-left: auto;
 	margin-right: 73px;
+}
+
+.up-and-down .arrow {
+	display: inline-block;
 }
 
 .up {
@@ -886,7 +901,8 @@ body {
 	display: flex;
 	-ms-flex-align: center;
 	    align-items: center;
-	min-height: 120px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 .index-footer {
@@ -997,4 +1013,8 @@ body {
 .footer-copyright:hover img,
 .footer-copyright:active img {
 	opacity: 0;
+}
+
+.copyright-text {
+	display: inline-block;
 }
