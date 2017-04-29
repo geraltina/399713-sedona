@@ -78,7 +78,9 @@ body {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.main-menu .active {
+.main-menu .active,
+.main-menu .active:hover,
+.main-menu .active:active {
 	color: #766357;
 }
 
@@ -173,9 +175,6 @@ body {
 	padding: 40px 0;
 	text-align: center;
 	background-color: white;
-	background-image: url(../img/shape.png);
-	background-repeat: no-repeat;
-	background-position: 0 -55px;
 }
 
 .reason {
@@ -236,7 +235,7 @@ body {
 	content: "";
 	display: inherit;
 	width: 75px;
-	min-height: 72px;
+	height: 72px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 60px;
@@ -250,7 +249,7 @@ body {
 	content: "";
 	display: inherit;
 	width: 75px;
-	min-height: 72px;
+	height: 72px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 60px;
@@ -264,7 +263,7 @@ body {
 	content: "";
 	display: inherit;
 	width: 75px;
-	min-height: 76px;
+	height: 76px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 55px;
@@ -335,6 +334,7 @@ body {
 	padding: 30px 0;
 	border: none;
 	text-transform: uppercase;
+	font-family: inherit;
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
@@ -345,6 +345,7 @@ body {
 .search-form form {
 	position: absolute;
 	top: 86px;
+	left: 0;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-direction: column;
@@ -384,6 +385,7 @@ body {
 .form-item input[type="text"] {
 	padding-left: 10px;
 	width: 346px; 
+	font-family: inherit;
 }
 
 .calendar {
@@ -394,7 +396,7 @@ body {
 	height: 22px;
 	background-image: url(../img/spritesheet.png);
 	background-repeat: no-repeat;
-	background-position: -327px -30px;
+	background-position: -326px -30px;
 	cursor: pointer;
 }
 
@@ -422,11 +424,13 @@ body {
 	padding: 0;
 	width: 38px;
 	text-align: center;
+	font-family: inherit;
 }
 
 .half-width button {
 	width: 38px;
 	height: 38px;
+	font-family: inherit;
 	background-color: #f2f2f2;
 	color: #a9a9a9;
 	border: 0;
@@ -446,6 +450,7 @@ body {
 	border: none;
 	background-color: #f2f2f2;
 	text-transform: uppercase;
+	font-family: inherit;
 	font-weight: bold;
 	line-height: 26px;
 }
@@ -454,8 +459,9 @@ body {
 	background-color: #ebebeb;
 }
 
-.search-form input[type="text"]:active {
+.search-form input[type="text"]:focus {
 	background-color: #ffffff;
+	outline: 2px solid #e5e5e5;
 }
 
 .search-form input[type="submit"] {
@@ -465,6 +471,7 @@ body {
 	border: none;
 	text-transform: uppercase;
 	cursor: pointer;
+	font-family: inherit;
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 26px;
@@ -547,7 +554,7 @@ input[type="checkbox"] + label::before {
 	min-height: 22px;
 	background-image: url(../img/spritesheet.png);
 	background-repeat: no-repeat;
-	background-position: -1200px -31px;
+	background-position: -1201px -31px;
 	cursor: pointer;
 }
 
@@ -615,6 +622,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .price input[type="text"] {
+	font-family: inherit;
 	font-weight: normal;
 	color: white;
 	background-color: rgba(255, 255, 255, 0);
@@ -654,6 +662,7 @@ input[type="checkbox"]:disabled + label::before {
 	min-height: 32px;
 	margin-left: -225px;
 	margin-bottom: 35px;
+	font-family: inherit;
 	text-transform: uppercase;
 	color: white;
 	background-color: rgba(255, 255, 255, 0);
@@ -896,7 +905,6 @@ input[type="checkbox"]:disabled + label::before {
 
 /*Футер*/
 .main-footer {
-	bottom: 0;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-align: center;
