@@ -336,7 +336,7 @@ img {
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0,25);
 }
 
-.search-form > button {
+.search-form > .form-button {
 	min-height: 86px;
 	padding: 30px 0;
 	border: none;
@@ -347,9 +347,10 @@ img {
 	line-height: 26px;
 	color: white;
 	background-color: #766357;
+	cursor: pointer;
 }
 
-.search-form form {
+.search-form .form {
 	position: absolute;
 	top: 86px;
 	left: 0;
@@ -613,6 +614,7 @@ input[type="checkbox"]:disabled + label::before {
 	width: 220px;
 	margin-left: 73px;
 	margin-top: 25px;
+	margin-bottom: 2px;
 }
 
 .type-of-house {
@@ -625,7 +627,7 @@ input[type="checkbox"]:disabled + label::before {
 	width: 220px;
 	margin-left: 34px;
 	margin-top: 25px;
-
+	margin-bottom: 2px;
 }
 
 .price {
@@ -1091,22 +1093,28 @@ input[type="checkbox"]:disabled + label::before {
 	height: 39px;
 }
 
-.footer-copyright:hover .footer-filter {
-	background-image: url(../img/spritesheet.png);
-	background-position: -580px -30px;
-}
-
-.footer-copyright:active .footer-filter {
-	background-image: url(../img/spritesheet.png);
-	background-position: -753px -30px;
-}
-
-.footer-copyright:hover img,
-.footer-copyright:active img {
-	opacity: 0;
-}
 
 .copyright-text {
 	display: inline-block;
 	vertical-align: top;
+}
+
+.btn-copyright {
+	display: block;
+	width: 115px;
+	padding-top: 39px; /* Высота изображения */
+	overflow: hidden; /* Скрывает область */
+	height: 0; /* Скрывает текст */
+	background-image: url(../img/spritesheet.png);
+	background-position: -407px -30px;
+}
+
+.btn-copyright:hover {
+	background-image: url(../img/spritesheet.png);
+	background-position: -580px -30px;
+}
+
+.btn-copyright:active {
+	background-image: url(../img/spritesheet.png);
+	background-position: -753px -30px;
 }
