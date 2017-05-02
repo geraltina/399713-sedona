@@ -218,6 +218,7 @@ img {
 	    -ms-grid-row-align: center;
 	    align-self: center;
 	width: 800px;
+	background-color: #81b3d2;
 }
 
 .features {
@@ -332,6 +333,7 @@ img {
 	-ms-flex-line-pack: center;
 	    align-content: center;
 	width: 568px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0,25);
 }
 
 .search-form > button {
@@ -408,13 +410,13 @@ img {
 .calendar:hover {
 	background-image: url(../img/spritesheet.png);
 	background-repeat: no-repeat;
-	background-position: -244px -30px;
+	background-position: -245px -30px;
 }
 
 .calendar:active {
 	background-image: url(../img/spritesheet.png);
 	background-repeat: no-repeat;
-	background-position: -163px -30px;
+	background-position: -164px -30px;
 }
 
 .adults-and-kids {
@@ -533,6 +535,7 @@ img {
 }
 
 .filter b {
+	display: inline-block;
 	font-size: 16px;
 	font-weight: bold;
 }
@@ -605,11 +608,11 @@ input[type="checkbox"]:disabled + label::before {
 	display: flex;
 	-ms-flex-direction: column;
 	    flex-direction: column;
-	
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
 	width: 220px;
 	margin-left: 73px;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 25px;
 }
 
 .type-of-house {
@@ -621,8 +624,8 @@ input[type="checkbox"]:disabled + label::before {
 	    justify-content: space-between;
 	width: 220px;
 	margin-left: 34px;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 25px;
+
 }
 
 .price {
@@ -634,12 +637,8 @@ input[type="checkbox"]:disabled + label::before {
 	    justify-content: flex-start;
 	margin-left: 263px;
 	margin-top: 30px;
-	margin-bottom: 30px;
 }
 
-.price b {
-	margin-bottom: 9px;
-}
 
 .price input[type="text"] {
 	margin-left: 5px;
@@ -955,7 +954,6 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .rating-and-stars {
-	position: relative;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-direction: column;
@@ -966,9 +964,6 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .rating {
-	position: absolute;
-	bottom: 0;
-	right: 0;
 	text-align: center;
 	padding: 5px 0;
 	width: 110px;
@@ -977,19 +972,15 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .stars {
-	position: absolute;
-	top: 0;
-	right: 0;
-	display: -ms-flexbox;
-	display: flex;
+	text-align: right;
 	margin-left: auto;
 	height: 18px;
 }
 
 .star-item {
+	display: inline-block;
 	width: 18px;
 	height: 18px;
-	margin-left: 5px;
 	background-image: url(../img/spritesheet.png);
 	background-repeat: no-repeat;
 	background-position: -1407px -31px;
