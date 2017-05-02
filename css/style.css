@@ -31,6 +31,11 @@ body {
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 .container {
 	width: 1200px;
 	margin: 0 auto;
@@ -519,7 +524,8 @@ body {
 
 /*Каталог*/
 .filter {
-	min-height: 217px;
+	position: relative;
+	height: 217px;
 	color: white;
 	background-color: #766357;
 	background-image: url(../img/picture-filter.jpg);
@@ -545,14 +551,19 @@ body {
 .type-of-house label {
 	display: -ms-flexbox;
 	display: flex;
-	padding-bottom: 5px;
-	padding-top: 5px;
+}
+
+.infrastructure b,
+.type-of-house b {
+	margin: 0;
+	padding-bottom: 24px;
 }
 
 input[type="checkbox"] + label::before {
 	content: "";
 	display: inline-block;
 	vertical-align: top;
+	padding-top: 24px;
 	padding-right: 14px;
 	width: 26px;
 	min-height: 22px;
@@ -594,8 +605,7 @@ input[type="checkbox"]:disabled + label::before {
 	display: flex;
 	-ms-flex-direction: column;
 	    flex-direction: column;
-	-ms-flex-pack: justify;
-	    justify-content: space-between;
+	
 	width: 220px;
 	margin-left: 73px;
 	margin-top: 30px;
@@ -627,52 +637,122 @@ input[type="checkbox"]:disabled + label::before {
 	margin-bottom: 30px;
 }
 
+.price b {
+	margin-bottom: 9px;
+}
+
 .price input[type="text"] {
+	margin-left: 5px;
+	max-width: 40px;
+	padding: 9px 0;
 	font-family: inherit;
 	font-weight: normal;
+	font-size: inherit;
+	line-height: inherit;
+	border: 0;
 	color: white;
 	background-color: rgba(255, 255, 255, 0);
 }
 
 .price-value {
+	position: relative;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-align: center;
 	    align-items: center;
 	-ms-flex-pack: center;
 	    justify-content: center;
+	margin-bottom: 20px;
+	margin-top: 9px;
 	width: 314px;
-	height: 32px;
-	margin-top: 10px;
+	height: 36px;
 	text-align: center;
 	border: 2px solid white;
+	border-radius: 2px;
 }
 
-.price-value .min {
-	margin-left: 5px;
-	padding-right: 10px;
-	max-width: 40px;
-	border: 0;
+.price-value label {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 38px;
+	vertical-align: top;
+	cursor: pointer;
 }
 
-.price-value .max {
-	margin-left: 5px;
-	max-width: 40px;
-	border: 0;
+.price-value::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-bottom: 20px;
+	width: 2px;
+	height: 22px;
+	background-color: white;
+	transform: translate(-50%, -50%);
+}
+
+.price-value .min-price-value {
+	margin-right: 40px;
+	margin-left: 57px;
+}
+
+.price-value .max-price-value {
+	margin-right: 40px;
+	margin-left: 50px;
+}
+
+.range-controls {
+	position: relative;
+}
+
+.range-controls .bar {
+	height: 2px;
+	width: 80%;
+	background-color: white;
+}
+
+.range-controls .scale {
+	height: 2px;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .controller {
+	position: absolute;
+	top: -9px;
+	width: 4px;
+	height: 4px;
+	background-color: #ababab;
+	border: 8px solid white;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.range-controls .controller:hover {
+	background-color: #1c4f80;
+}
+
+.range-controls .controller-left {
+	left: 0;
+}
+
+.range-controls .controller-right {
+	left: 80%;
 }
 
 .filter .show {
+	position: absolute;
+	bottom: 35px;
+	right: 170px;
 	-ms-flex-item-align: end;
 	    align-self: flex-end;
 	width: 133px;
 	min-height: 32px;
-	margin-left: -225px;
-	margin-bottom: 35px;
 	font-family: inherit;
 	text-transform: uppercase;
 	color: white;
 	background-color: rgba(255, 255, 255, 0);
 	border: 2px solid white;
+	border-radius: 2px;
 	cursor: pointer;
 }
 
@@ -686,7 +766,8 @@ input[type="checkbox"]:disabled + label::before {
 	display: flex;
 	-ms-flex-align: center;
 	    align-items: center;
-	min-height: 87px;
+	padding-top: 28px;
+	padding-bottom: 30px;
 }
 
 .sorting .found {
@@ -874,6 +955,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .rating-and-stars {
+	position: relative;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-direction: column;
@@ -884,23 +966,24 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .rating {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-align: center;
-	    align-items: center;
-	-ms-flex-pack: center;
-	    justify-content: center;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+	padding: 5px 0;
 	width: 110px;
-	min-height: 27px;
 	color: #666666;
 	background-color: #f2f2f2;
 }
 
 .stars {
+	position: absolute;
+	top: 0;
+	right: 0;
 	display: -ms-flexbox;
 	display: flex;
 	margin-left: auto;
-	height: 17px;
+	height: 18px;
 }
 
 .star-item {
