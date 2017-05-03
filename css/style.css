@@ -544,23 +544,28 @@ img {
 
 .search-form input::-webkit-input-placeholder {
 	color: #000000;
+	opacity: 1;
 }
 
 .search-form input:-moz-placeholder,
 .search-form input::-moz-placeholder {
 	color: #000000;
+	opacity: 1;
 }
 
 .search-form input:-ms-input-placeholder {
 	color: #000000;
+	opacity: 1;
 }
 
 .search-form input::placeholder {
 	color: #000000;
+	opacity: 1;
 }
 
 .search-form input:placeholder {
 	color: #000000;
+	opacity: 1;
 }
 
 .map {
