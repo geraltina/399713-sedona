@@ -543,23 +543,24 @@ img {
 	background-color: #5496bd;
 }
 
-.search-form ::-webkit-input-placeholder {
+.search-form input::-webkit-input-placeholder {
 	color: #000000;
 }
 
-.search-form ::-moz-placeholder {
+.search-form input:-moz-placeholder,
+.search-form input::-moz-placeholder {
 	color: #000000;
 }
 
-.search-form :-ms-input-placeholder {
+.search-form input:-ms-input-placeholder {
 	color: #000000;
 }
 
-.search-form ::placeholder {
+.search-form input::placeholder {
 	color: #000000;
 }
 
-.search-form :placeholder {
+.search-form input:placeholder {
 	color: #000000;
 }
 
