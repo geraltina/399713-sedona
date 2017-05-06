@@ -14,6 +14,10 @@
 	font-style: normal;
 }
 
+@keyframes form-animation {
+	
+}
+
 html {
 	background-color: #f2f2f2;
 }
@@ -378,7 +382,7 @@ img {
 	cursor: pointer;
 }
 
-.search-form .form {
+.search-form .form-visible {
 	position: absolute;
 	top: 86px;
 	left: 0;
@@ -395,6 +399,12 @@ img {
 	color: black;
 	background-color: white;
 	box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
+	animation-name: form-animation;
+	animation-duration: 1s;
+}
+
+.search-form .form-hidden {
+	display: none;
 }
 
 .form-item label {
