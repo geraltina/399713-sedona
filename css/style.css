@@ -15,7 +15,14 @@
 }
 
 @keyframes form-animation {
-	
+	0% {
+		transform: translateY(-280px);
+		height: 0;
+
+	}
+	100% {
+		transform: translateY(0px);
+	}
 }
 
 html {
@@ -340,10 +347,14 @@ img {
 }
 
 .search-text {
-	margin-top: 55px;
-	margin-bottom: 47px;
+	z-index: 100;
+	padding-top: 55px;
+	padding-bottom: 47px;
+	padding-left: 85px;
+	padding-right: 85px;
 	text-align: center;
 	line-height: 24px;
+	background-color: white;
 }
 
 .search-text b {
@@ -365,10 +376,11 @@ img {
 	-ms-flex-line-pack: center;
 		align-content: center;
 	width: 568px;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0,25);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 .search-form > .form-button {
+	z-index: 100;
 	min-height: 86px;
 	padding: 30px 0;
 	border: none;
@@ -384,6 +396,7 @@ img {
 
 .search-form .form-visible {
 	position: absolute;
+	z-index: 50;
 	top: 86px;
 	left: 0;
 	display: -ms-flexbox;
@@ -400,7 +413,8 @@ img {
 	background-color: white;
 	box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
 	animation-name: form-animation;
-	animation-duration: 1s;
+	animation-duration: 2s;
+	overflow: hidden;
 }
 
 .search-form .form-hidden {

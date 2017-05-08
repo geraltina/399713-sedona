@@ -1,9 +1,11 @@
 var link = document.querySelector(".form-button");
-var popup = document.querySelector(".form-hidden");
+var popup = document.querySelector(".form-visible");
 var arrive = document.querySelector(".arrive");
 
-link.addEventListener("click" function (evt) {
+popup.classList.add("form-hidden");
+
+link.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	popup.classList.toggle("form-visible");
+	popup.classList.toggle("form-hidden");
 	arrive.focus();
 });
