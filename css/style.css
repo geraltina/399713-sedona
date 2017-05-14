@@ -291,6 +291,7 @@ img {
 .feature {
 	width: 400px;
 	text-align: center;
+	padding-bottom: 10px;
 }
 
 .feature-one::before {
@@ -777,7 +778,7 @@ input[type="checkbox"]:disabled + label::before {
 	font-family: inherit;
 	font-weight: normal;
 	font-size: inherit;
-	line-height: inherit;
+	line-height: 20px;
 	border: 0;
 	color: white;
 	background-color: rgba(255, 255, 255, 0);
