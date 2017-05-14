@@ -827,7 +827,7 @@ input[type="checkbox"]:disabled + label::before {
 
 .price-value .min-price-value {
 	margin-right: 40px;
-	margin-left: 63px;
+	margin-left: 62px;
 }
 
 .price-value .max-price-value {
